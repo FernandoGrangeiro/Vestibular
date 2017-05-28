@@ -11,12 +11,12 @@ public class Tela {
         int x = 0;
         Carreira[] car = new Carreira[3];
 
-        int op = JOptionPane.showOptionDialog(null, "Bem Vindo ao ZENEM\nGostaria de se inscrever?", "Quit?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
+        int op = JOptionPane.showOptionDialog(null, "Bem Vindo ao ZENEM\nGostaria de se inscrever?", "ZENEM", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE,
                 null, null, null);
 
         if (op == JOptionPane.YES_OPTION) {
             String[] msg = {"Arquivo", "Manual"};
-            op = JOptionPane.showOptionDialog(null, "Bem Vindo ao ZENEM\nGostaria de se inscrever?", "Quit?", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
+            op = JOptionPane.showOptionDialog(null, "Bem Vindo ao ZENEM\nGostaria de se inscrever?", "ZENEM", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
                     null, msg, msg[0]);
             if (op == 0) {
                 LerTudo lt = new LerTudo();
@@ -175,7 +175,7 @@ public class Tela {
                 v.addCarreira(car);
                 v.addCurso(car);
 
-                x = JOptionPane.showOptionDialog(null, "Gostaria de continuar se inscrevendo?", "Quit?", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
+                x = JOptionPane.showOptionDialog(null, "Gostaria de continuar se inscrevendo?", "ZENEM", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
 
             } while (x == JOptionPane.YES_OPTION);
         } else {
@@ -186,7 +186,7 @@ public class Tela {
         do {
             String[] msg = {"Cursos Ordenados pelo numero de candidatos inscritos", "Cursos Ordenados pelo numero de candidatos por vagas", "Carreiras ordenadas pelo numero de candidatos inscritos",
                 "Carreiras Ordenadas pelo numero de candidatos por vaga", "Listar cada curso com os nomes das pessoas que escolheram o curso como primeira opcao", "Sair"};
-            es = JOptionPane.showOptionDialog(null, "Bem Vindo ao ZENEM\nGostaria de se inscrever?", "Quit?", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
+            es = JOptionPane.showOptionDialog(null, "Gostaria de ver Algo?", "ZENEM", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
                     null, msg, msg[0]);
 
             if (es == 0) {
@@ -211,7 +211,7 @@ public class Tela {
                 et.escrevecand(v.PrimeiraEsco());
             }
 
-        } while (es<5);
+        } while (es < 5);
     }
 
 }
