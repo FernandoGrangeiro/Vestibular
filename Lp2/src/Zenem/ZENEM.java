@@ -35,10 +35,10 @@ public class ZENEM {
 
         for (int i = 0; i < cursos.size() - 1; i++) {
             for (int z = i; z < cursos.size(); z++) {
-                if (cursos.get(i).getInscritos() < cursos.get(z).getInscritos()) {
-                    c = cursos.get(z);
-                    cursos.set(z, cursos.get(i));
-                    cursos.set(i, c);
+                if (cursos.get(i).getInscritos() < cursos.get(z+1).getInscritos()) {
+                    c = cursos.get(z+1);
+                    cursos.set(z+1, cursos.get(z));
+                    cursos.set(z, c);
 
                 }
             }
@@ -55,10 +55,10 @@ public class ZENEM {
 
         for (int i = 0; i < cursos.size() - 1; i++) {
             for (int z = i; z < cursos.size(); z++) {
-                if (cursos.get(i).getCand() < cursos.get(z).getCand()) {
-                    c = cursos.get(z);
-                    cursos.set(z, cursos.get(i));
-                    cursos.set(i, c);
+                if (cursos.get(i).getCand() < cursos.get(z+1).getCand()) {
+                    c = cursos.get(z+1);
+                    cursos.set(z+1, cursos.get(z));
+                    cursos.set(z, c);
 
                 }
             }
@@ -75,10 +75,10 @@ public class ZENEM {
 
         for (int i = 0; i < carreiras.size() - 1; i++) {
             for (int z = i; z < carreiras.size(); z++) {
-                if (carreiras.get(i).getInscrito() < carreiras.get(z).getInscrito()) {
-                    c = carreiras.get(z);
-                    carreiras.set(z, carreiras.get(i));
-                    carreiras.set(i, c);
+                if (carreiras.get(i).getInscrito() < carreiras.get(z+1).getInscrito()) {
+                    c = carreiras.get(z+1);
+                    carreiras.set(z+1, carreiras.get(z));
+                    carreiras.set(z, c);
 
                 }
             }
@@ -95,10 +95,10 @@ public class ZENEM {
 
         for (int i = 0; i < carreiras.size() - 1; i++) {
             for (int z = i; z < carreiras.size(); z++) {
-                if (carreiras.get(i).getCand() < carreiras.get(z).getCand()) {
-                    c = carreiras.get(z);
-                    carreiras.set(z, carreiras.get(i));
-                    carreiras.set(i, c);
+                if (carreiras.get(z).getCand() < carreiras.get(z+1).getCand()) {
+                    c = carreiras.get(z+1);
+                    carreiras.set(z+1, carreiras.get(z));
+                    carreiras.set(z, c);
 
                 }
             }
