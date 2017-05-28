@@ -10,7 +10,7 @@ public class LerTudo {
 
     public void lerCurso(String nomearq, Carreira[] c) throws IOException, FileNotFoundException {
         FileReader fr = new FileReader(nomearq);
-        try (BufferedReader br = new BufferedReader(fr)) {
+        BufferedReader br = new BufferedReader(fr);
             String linha;
             int i = 0, i1 = 0, i2 = 0, i3 = 0;
             Curso cur;
@@ -39,7 +39,8 @@ public class LerTudo {
             }   c[0].setCurso(ex);
             c[1].setCurso(hum);
             c[2].setCurso(bio);
-        }
+        
+        br.close();
     }
 
     public Carreira[] lerCarreira(String nomearq) throws IOException, FileNotFoundException {
@@ -58,22 +59,23 @@ public class LerTudo {
             ca[i] = c;
             i++;
         }
+        br.close();
         return ca;
     }
 
     public void lerAluno(String nomearq, ZENEM v, Carreira[] ca) throws IOException, FileNotFoundException {
         FileReader fr = new FileReader(nomearq);
-        try (BufferedReader br = new BufferedReader(fr)) {
+        BufferedReader br = new BufferedReader(fr);
             String linha;
             String[] cursoA = new String[3];
             while ((linha = br.readLine()) != null) {
                 String[] info = linha.split(";");
                 String nome = info[0];
-                String RG = info[2];
-                String carreiraEscolhida = info[5];
-                cursoA[0] = info[6];
-                cursoA[1] = info[7];
-                cursoA[2] = info[8];
+                String RG = info[1];
+                String carreiraEscolhida = info[2];
+                cursoA[0] = info[3];
+                cursoA[1] = info[4];
+                cursoA[2] = info[5];
                 Candidato c = new Candidato(nome, RG, carreiraEscolhida, cursoA);
                 for (String cursoA1 : cursoA) {
                     for (Carreira ca1 : ca) {
@@ -88,6 +90,7 @@ public class LerTudo {
                 v.inscrever(c);
                 
             }
+            br.close();
         }
     }
-}
+

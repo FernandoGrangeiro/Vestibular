@@ -1,4 +1,4 @@
 Fernando;123456789;Bio;Medicina;Biologia;Farmácia 
 Molejo;8123456789;Exatas;Astronomia;Ciência da Computação;Engenharia 
 Andersosn;123456789;Humanas;História;Geografia;Português
-Lucas;123456789;Exatas;Ciência da Computação;Física;Engenharia Nuclear
+Lucas;123456789;Exatas;Ciência da Computa;Física;Engenharia Nuclear

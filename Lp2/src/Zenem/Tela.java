@@ -22,9 +22,9 @@ public class Tela {
                 LerTudo lt = new LerTudo();
                 String nome = JOptionPane.showInputDialog("Digite o Nome do Arquivo de Carreiras para abrir");
                 car = lt.lerCarreira(nome);
-                nome = JOptionPane.showInputDialog("Digite o Nome do Arquivo de Carreiras para abrir");
+                nome = JOptionPane.showInputDialog("Digite o Nome do Arquivo de Curso para abrir");
                 lt.lerCurso(nome, car);
-                nome = JOptionPane.showInputDialog("Digite o Nome do Arquivo de Carreiras para abrir");
+                nome = JOptionPane.showInputDialog("Digite o Nome do Arquivo de Candidatos para abrir");
                 lt.lerAluno(nome, v, car);
 
             }
@@ -47,7 +47,7 @@ public class Tela {
                     do {
                         String nome = JOptionPane.showInputDialog("Digite o nome do curso");
                         int num = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de vagas?"));
-                        String care = JOptionPane.showInputDialog("Digite a carreira a qual esse curso pertence");
+                        String care = JOptionPane.showInputDialog("A qual carreira esse curso pertence ?" + car[0].getNome() + "" + car[1].getNome() + "" + car[2].getNome());
                         Curso cur = new Curso(nome, num, care);
 
                         if (care.equals(car[0].getNome())) {
