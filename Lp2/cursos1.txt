@@ -1,0 +1,15 @@
+Medicina;15;Bio
+Biologia;12;Bio
+Farmácia;10;Bio
+Ciências Naturais;Bio
+Astronomia;10;Exatas
+Engenharia;13;Exatas
+Ciência da Computação;42;Exatas
+Física;33;Exatas
+História;4;Humanas
+Geografia;8;Humanas
+Português;9;Humanas
+Literatura;15;Humanas
+
+
+
