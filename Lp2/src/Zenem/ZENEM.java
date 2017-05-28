@@ -33,8 +33,8 @@ public class ZENEM {
     public String CandInscCurs() {
         Curso c;
 
-        for (int i = 0; i < cursos.size() - 1; i++) {
-            for (int z = i; z < cursos.size(); z++) {
+        for (int i = 0; i < cursos.size() -1; i++) {
+            for (int z = i; z < cursos.size()-1; z++) {
                 if (cursos.get(i).getInscritos() < cursos.get(z+1).getInscritos()) {
                     c = cursos.get(z+1);
                     cursos.set(z+1, cursos.get(z));
@@ -53,8 +53,8 @@ public class ZENEM {
     public String CandVagaCurs() {
         Curso c;
 
-        for (int i = 0; i < cursos.size() - 1; i++) {
-            for (int z = i; z < cursos.size(); z++) {
+        for (int i = 0; i < cursos.size() ; i++) {
+            for (int z = i; z < cursos.size()-1; z++) {
                 if (cursos.get(i).getCand() < cursos.get(z+1).getCand()) {
                     c = cursos.get(z+1);
                     cursos.set(z+1, cursos.get(z));
@@ -73,8 +73,8 @@ public class ZENEM {
     public String CandInscCarr() {
         Carreira c;
 
-        for (int i = 0; i < carreiras.size() - 1; i++) {
-            for (int z = i; z < carreiras.size(); z++) {
+        for (int i = 0; i < carreiras.size() ; i++) {
+            for (int z = i; z < carreiras.size()-1; z++) {
                 if (carreiras.get(i).getInscrito() < carreiras.get(z+1).getInscrito()) {
                     c = carreiras.get(z+1);
                     carreiras.set(z+1, carreiras.get(z));
@@ -93,8 +93,8 @@ public class ZENEM {
     public String CandVagaCarr() {
         Carreira c;
 
-        for (int i = 0; i < carreiras.size() - 1; i++) {
-            for (int z = i; z < carreiras.size(); z++) {
+        for (int i = 0; i < carreiras.size() ; i++) {
+            for (int z = i; z < carreiras.size()-1; z++) {
                 if (carreiras.get(z).getCand() < carreiras.get(z+1).getCand()) {
                     c = carreiras.get(z+1);
                     carreiras.set(z+1, carreiras.get(z));
