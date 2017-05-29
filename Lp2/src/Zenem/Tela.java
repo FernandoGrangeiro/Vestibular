@@ -90,7 +90,7 @@ public class Tela {
                         ca = car[0].getNome();
 
                         do {
-                            int opc = Integer.parseInt(JOptionPane.showInputDialog("Escolha entre esses cursos\n1-" + car[0].curso[0].getNome()) + "/n2-" + car[0].curso[1].getNome() + "/n3-" + car[0].curso[2].getNome() + "/n4-" + car[0].curso[3].getNome());
+                            int opc = Integer.parseInt(JOptionPane.showInputDialog("Escolha entre esses cursos\n1-" + car[0].curso[0].getNome()) + "/n2-" + car[0].curso[1].getNome() + "/n3-" + car[0].curso[2].getNome() + "/n4-" + car[0].curso[3].getNome()+"\n"+cont);
                             if (opc == 1) {
                                 cursos[cont] = car[0].curso[0].getNome();
                                 car[0].curso[0].aumInsc();
@@ -178,9 +178,7 @@ public class Tela {
                 x = JOptionPane.showOptionDialog(null, "Gostaria de continuar se inscrevendo?", "ZENEM", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE, null, null, null);
 
             } while (x == JOptionPane.YES_OPTION);
-        } else {
-            JOptionPane.showMessageDialog(null, "Obrigado");
-        }
+        } 
         int es;
         EscreveTudo et = new EscreveTudo();
         do {
@@ -212,6 +210,7 @@ public class Tela {
             }
 
         } while (es < 5);
+        JOptionPane.showMessageDialog(null, "Obrigado");
     }
 
 }

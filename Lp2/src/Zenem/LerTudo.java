@@ -14,9 +14,9 @@ public class LerTudo {
             String linha;
             int i = 0, i1 = 0, i2 = 0, i3 = 0;
             Curso cur;
-            Curso[] ex = new Curso[4];
-            Curso[] hum = new Curso[4];
-            Curso[] bio = new Curso[4];
+            Curso[] ex = new Curso[5];
+            Curso[] hum = new Curso[5];
+            Curso[] bio = new Curso[5];
             while ((linha = br.readLine()) != null) {
                 String[] info = linha.split(";");
                 String nome = info[0];
@@ -36,7 +36,8 @@ public class LerTudo {
                     i3++;
                 }
                 i++;
-            }   c[0].setCurso(ex);
+            }  
+            c[0].setCurso(ex);
             c[1].setCurso(hum);
             c[2].setCurso(bio);
         
