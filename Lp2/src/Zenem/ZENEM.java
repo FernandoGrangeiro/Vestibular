@@ -116,7 +116,7 @@ public class ZENEM {
             z += (cursos.get(i).getNome());
             for (int j = 0; j < cursos.size(); j++) {
                 if (candidatos.get(i).getCurso().equals(cursos.get(j).getNome())) {
-                    z += ("\n" + candidatos.get(i).getNome());
+                    z += ("\n" + candidatos.get(i).getNome()+"\n");
                 }
             }
         }

@@ -12,13 +12,14 @@ public class LerTudo {
         FileReader fr = new FileReader(nomearq);
         BufferedReader br = new BufferedReader(fr);
             String linha;
-            int i = 0, i1 = 0, i2 = 0, i3 = 0;
+            int i1 = 0, i2 = 0, i3 = 0;
             Curso cur;
-            Curso[] ex = new Curso[5];
-            Curso[] hum = new Curso[5];
-            Curso[] bio = new Curso[5];
+            Curso[] ex = new Curso[4];
+            Curso[] hum = new Curso[4];
+            Curso[] bio = new Curso[4];
             while ((linha = br.readLine()) != null) {
                 String[] info = linha.split(";");
+                System.out.println(info[0] + " " + info[1]);
                 String nome = info[0];
                 int qtddVaga = Integer.parseInt(info[1]);
                 String carreira = info[2];
@@ -35,7 +36,7 @@ public class LerTudo {
                     bio[i3] = cur;
                     i3++;
                 }
-                i++;
+              
             }  
             c[0].setCurso(ex);
             c[1].setCurso(hum);

@@ -31,6 +31,11 @@ public class Curso {
     public String getNome(){
      return nome;   
     }
+
+    @Override
+    public String toString() {
+        return "Curso{" + "nome=" + nome + ", vagas=" + vagas + ", carreira=" + carreira + ", inscritos=" + inscritos + '}';
+    }
     
     
     
