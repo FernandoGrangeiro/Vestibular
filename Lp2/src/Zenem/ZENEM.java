@@ -17,6 +17,14 @@ public class ZENEM {
         candidatos.add(c);
 
     }
+    public boolean veriRg(String rg){
+        for(int i=0; i<candidatos.size();i++){
+            if(rg.equals(candidatos.get(i).getRG())){
+                return false;
+            }
+        }
+        return true;
+    }
 
     public void addCurso(Carreira[] car) {
         for (Carreira car1 : car) {
@@ -24,6 +32,7 @@ public class ZENEM {
                 cursos.add(car1.getCurso1(z));
             }
         }
+        
     }
 
     public void addCarreira(Carreira[] car) {

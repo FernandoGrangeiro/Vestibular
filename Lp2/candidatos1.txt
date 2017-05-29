@@ -2,3 +2,7 @@ Fernando;123456789;Bio;Medicina;Biologia;Farmacia
 Molejo;8123456789;Exatas;Astronomia;Ciencia da Computacao;Engenharia 
 Andersosn;123456789;Humanas;Historia;Geografia;Português
 Lucas;123456789;Exatas;Ciencia da Computacao;Fisica;Engenharia Nuclear
+sas;123454289;Humanas;Português;Geografia;Historia
+wqcas;121234589;Humanas;Português;Geografia;Historia
+weas;123456349;Humanas;Português;Geografia;Historia
+asdas;123451239;Humanas;Português;Geografia;Historia

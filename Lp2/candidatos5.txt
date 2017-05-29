@@ -6,6 +6,7 @@ Geografia
 Andersosn
 Astronomia
 Lucas
+
 Ciencia da Computacao
 Fernando
 Historia
@@ -14,3 +15,5 @@ Geografia
 Andersosn
 Astronomia
 Lucas
+
+HistoriaCiencia da ComputacaoGeografiaAstronomiaFisicaMedicinaBiologiaPortugues

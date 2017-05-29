@@ -11,7 +11,7 @@ public class EscreveTudo {
     public void escrevecand(String n) throws IOException, FileNotFoundException {
         FileOutputStream fos = new FileOutputStream("candidatos5.txt", true);
         PrintWriter pw = new PrintWriter(fos);
-        pw.print(n);
+        pw.println(n);
         pw.close();
     }
 
@@ -19,7 +19,7 @@ public class EscreveTudo {
     
         FileOutputStream fos = new FileOutputStream("curso5.txt", true);
         PrintWriter pw = new PrintWriter(fos);
-        pw.print(n);
+        pw.println(n);
         pw.close();
 
     }
@@ -28,7 +28,7 @@ public class EscreveTudo {
 
         FileOutputStream fos = new FileOutputStream("carreiras5.txt", true);
         PrintWriter pw = new PrintWriter(fos);
-        pw.print(n);
+        pw.println(n);
         pw.close();
 
     }

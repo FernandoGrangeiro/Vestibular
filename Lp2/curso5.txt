@@ -10,6 +10,7 @@ Literatura
 Engenharia
 Farmacia
 Ciencias Naturais
+
 Ciencia da Computacao
 Historia
 Geografia
@@ -22,6 +23,20 @@ Literatura
 Engenharia
 Farmacia
 Ciencias Naturais
+
+Historia
+Ciencia da Computacao
+Geografia
+Astronomia
+Fisica
+Medicina
+Biologia
+Portugues
+Literatura
+Engenharia
+Farmacia
+Ciencias Naturais
+
 Ciencia da Computacao
 Historia
 Geografia
@@ -34,8 +49,22 @@ Literatura
 Engenharia
 Farmacia
 Ciencias Naturais
-Ciencia da Computacao
+
 Historia
+Geografia
+Astronomia
+Ciencia da Computacao
+Fisica
+Medicina
+Biologia
+Portugues
+Literatura
+Engenharia
+Farmacia
+Ciencias Naturais
+
+Historia
+Ciencia da Computacao
 Geografia
 Astronomia
 Fisica
@@ -46,3 +75,4 @@ Literatura
 Engenharia
 Farmacia
 Ciencias Naturais
+

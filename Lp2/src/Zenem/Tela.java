@@ -46,8 +46,15 @@ public class Tela {
                     Curso[] a3 = new Curso[4];
                     do {
                         String nome = JOptionPane.showInputDialog("Digite o nome do curso");
+                        if(nome.equals("")){
+                            nome = JOptionPane.showInputDialog("Digite o nome do curso");
+                        }
                         int num = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de vagas?"));
-                        String care = JOptionPane.showInputDialog("A qual carreira esse curso pertence ?" + car[0].getNome() + "" + car[1].getNome() + "" + car[2].getNome());
+                        String care = JOptionPane.showInputDialog("A qual carreira esse curso pertence ?" + car[0].getNome() + " " + car[1].getNome() + " " + car[2].getNome());
+                        if(care.equals("")){
+                            care = JOptionPane.showInputDialog("A qual carreira esse curso pertence ?" + car[0].getNome() + " " + car[1].getNome() + " " + car[2].getNome());
+                        }
+                    
                         Curso cur = new Curso(nome, num, care);
 
                         if (care.equals(car[0].getNome())) {
@@ -76,10 +83,10 @@ public class Tela {
                     }
 
                     String RG = JOptionPane.showInputDialog("Digite seu RG");
-                    if (RG.equals("") || RG.length() < 9 || RG.length() > 9) {
+                    if (RG.equals("") || RG.length() < 9 || RG.length() > 9 || !v.veriRg(RG)) {
                         do {
                             RG = JOptionPane.showInputDialog("RG tamanho incorreto ou vazio");
-                        } while ((RG.equals("") || RG.length() < 9 || RG.length() > 9));
+                        } while ((RG.equals("") || RG.length() < 9 || RG.length() > 9 || !v.veriRg(RG)));
                     }
 
                     int opca = Integer.parseInt(JOptionPane.showInputDialog("Escolha a carreira que voce quer \n1-" + car[0].getNome() + "\n2-" + car[1].getNome() + "\n3-" + car[2].getNome()));
@@ -182,9 +189,8 @@ public class Tela {
         int es;
         EscreveTudo et = new EscreveTudo();
         do {
-            String[] msg = {"Cursos Ordenados pelo numero de candidatos inscritos", "Cursos Ordenados pelo numero de candidatos por vagas", "Carreiras ordenadas pelo numero de candidatos inscritos",
-                "Carreiras Ordenadas pelo numero de candidatos por vaga", "Listar cada curso com os nomes das pessoas que escolheram o curso como primeira opcao", "Sair"};
-            es = JOptionPane.showOptionDialog(null, "Gostaria de ver Algo?", "ZENEM", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
+            String[] msg = {"COCI","COCV","CACI","CACV","LCCPO","Sair"};
+            es = JOptionPane.showOptionDialog(null, "Cursos Ordenados pelo numero de candidatos inscritos\nCursos Ordenados pelo numero de candidatos por vagas\nCarreiras ordenadas pelo numero de candidatos inscritos \nCarreiras Ordenadas pelo numero de candidatos por vaga\nListar cada curso com os nomes das pessoas que escolheram o curso como primeira opcao\n Sair", "ZENEM", JOptionPane.DEFAULT_OPTION, JOptionPane.QUESTION_MESSAGE,
                     null, msg, msg[0]);
 
             if (es == 0) {
